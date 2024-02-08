@@ -1,0 +1,226 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+body{
+    /* overflow: hidden; */
+    background-color: #473a8d;
+}
+
+/* Home Page  */
+
+
+.Body{
+    background-color: #473a8d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.Quizapp{
+    font-size: 50px;
+    margin: 1%;
+    color: white;
+}
+
+.PlayButton{
+    cursor: pointer;
+    width: 150px;
+    margin: 2%;
+    height: 45px;
+    background-color: #0AB306;
+    border: 0px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    font-size: 1em;
+}
+
+.PlayButton:hover{
+    box-shadow: 3px 3px 3px black;
+    transition: box-shadow .5s;
+}
+
+/* QuizeComponents */
+
+
+.innerDiv{
+    margin: 5% 5% 5% 5%;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.questionhead{
+    text-align: center;
+    font-size: 2em;
+    padding: 5% 0% 3% 0%;
+}
+
+.qnNo{
+    padding: 0% 0% 0% 5%;
+    font-size: 1.2em;
+    font-weight: 550;
+}
+
+.question{
+    padding-top: 2%;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.buttons button{
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    border: 0px;
+    background-color: #1EA1F1;
+    font-size: 1em;
+}
+
+.buttons button:hover{
+    box-shadow: 0px 0px 7px 2px rgb(0, 0, 0);
+    transition: box-shadow 1s, font-weight 1s , color 1s;
+    color: rgb(230, 230, 230);
+    font-weight: bold;
+}
+
+.buttons{
+    display: grid;
+    margin-top: 5%;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2,25%);
+    gap: 50px;
+}
+
+.downbuttons{
+    display: flex;
+    justify-content: center;
+}
+
+.downbuttons button{
+    margin: 50px;
+    padding: 8px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.downbuttons button:hover{
+    box-shadow: 0px 0px 5px 0px rgb(45, 45, 45);
+    transition: box-shadow .5s;
+}
+
+.previous{
+    background-color: #3E7EAA;
+    font-weight: bold;
+    color: white;
+    border: 0px;
+}
+
+.next{
+    background-color: #008001;
+    font-weight: bold;
+    color: white;
+    border: 0px;
+}
+.quit{
+    background-color: #FF0000;
+    font-weight: bold;
+    color: white;
+    border: 0px;
+}
+
+.finish{
+    border-radius: 5px;
+    margin-top: 5%;
+}
+
+
+/* Result page */
+
+.Main{
+    width: 100%;
+    background-color: #5c7fcc;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body{
+    margin-left: 30%;
+    width: 1020px;
+}
+
+.resultHead{
+    font-size: 3em;
+    margin: 2%;
+    text-align: center;
+    width: 46%;
+    color: white;
+}
+
+.InnerDiv{
+    background-color: white;
+    padding: 3%;
+    width: 50%;
+    text-align: center;
+}
+
+.phrase{
+    font-size: 1.5em;
+}
+
+.score{
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+
+.cell{
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(20%, 40%);
+    display: flex;
+    justify-content: space-between;
+    line-height: 200%;
+    font-size: 1.1em;
+}
+
+.twobuttons{
+    display: flex;
+    width: 50%;
+    margin-top: 2%;
+    justify-content: center;
+    gap: 50px;
+}
+
+.twobuttons button{
+    cursor: pointer;
+    width: 160px;
+    height: 40px;
+    border-radius: 6px;
+    border: 0px;
+    font-size: 1em;
+    margin: 2%;
+}
+
+.playAgain{
+    background-color: white;
+}
+
+.backToHome{
+    background-color: white;
+}
+
+.twobuttons button:hover{
+    box-shadow: 0px 0px 7px 1px rgb(63, 63, 63);
+    transition: box-shadow .5s;
+}
